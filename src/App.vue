@@ -24,17 +24,18 @@ export default {
   },
 
   methods: {
-    ...mapActions(['fetchNepalData']),
+    ...mapActions(['fetchNepalData','fetchWorldData']),
   },
 
 
   created() {
     this.fetchNepalData();
+    this.fetchWorldData();
   }
 }
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
