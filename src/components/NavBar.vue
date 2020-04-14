@@ -7,6 +7,7 @@
       </div>
       <v-spacer></v-spacer>
       <router-link to="/" class="route" exact>Home</router-link>
+      <router-link to="/stats" class="route">Stats</router-link>
       <router-link to="/about" class="route">About</router-link>
   </v-app-bar>
 </template>

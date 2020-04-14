@@ -8,8 +8,10 @@
 </template>
 
 <script>
-import axios from 'axios';
+
 import NavBar from './components/NavBar';
+import { mapActions } from 'vuex';
+
 export default {
   name: 'App',
   data() {
@@ -21,21 +23,20 @@ export default {
     NavBar
   },
 
+  methods: {
+    ...mapActions(['fetchNepalData']),
+  },
+
 
   created() {
-    console.log('created home');
-    axios.get('https://nepalcorona.info/api/v1/data/nepal')
-    .then((res) => {
-      this.infectionData = res.data;
-      console.log(this.infectionData);
-    }).catch(err => console.log(err));
+    this.fetchNepalData();
   }
 }
 </script>
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
