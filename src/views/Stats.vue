@@ -42,7 +42,7 @@ export default {
                 { text: "Total Death", value: "totalDeaths" },
                 { text: "New Daath", value: "newDeaths" },
                 { text: "Active Cases", value: "activeCases" },
-                { text: "Total Recovered", value: "totalRecovered" }
+                { text: "Recovered", value: "totalRecovered" }
             ]
         }
     },

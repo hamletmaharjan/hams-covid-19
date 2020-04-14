@@ -5,6 +5,7 @@
         class="shrink mr-2" src="../assets/corona.png" width="40px" height="40px"/>
         
       </div>
+      <router-link to="/" class="route" exact>Hams COVID-19 app</router-link>
       <v-spacer></v-spacer>
       <router-link to="/" class="route" exact>Home</router-link>
       <router-link to="/stats" class="route">Stats</router-link>
@@ -34,8 +35,11 @@ export default {
   font-size: 1.5vw;
 }
 
+.v-application a {
+    color: black;
+}
 
 .router-link-active {
-    background-color:#b0b5b1;
+    font-weight: bold;
 }
 </style>
