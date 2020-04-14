@@ -2,7 +2,7 @@
   
   <v-card>
     <v-card-title>
-      Country
+      <h3>Search Term</h3>
       <v-spacer></v-spacer>
       <v-text-field
         v-model="search"
@@ -56,8 +56,9 @@ export default {
 }
 </script>
 
-<style>
-#app {
-    color: black;
+<style scoped>
+p {
+    font-size: 1em;
 }
+
 </style>
